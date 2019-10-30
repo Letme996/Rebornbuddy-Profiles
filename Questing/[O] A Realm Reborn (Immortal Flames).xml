@@ -63,9 +63,11 @@
 					<If Condition="HasQuest(65659)">
 					    <If Condition="GetQuestStep(65659) == 1">
                             <If Condition="not IsTodoChecked(65659, 1, 0)">
-                                <GetTo ZoneId="132" XYZ="32.9137, 2.670288, 30.0144" /> <!-- New Gridania Aetheryte -->
-                                <UseObject NpcId="2" XYZ="32.9137, 2.670288, 30.0144" UseTimes="1" BlacklistAfter="True" Radius="10" QuestId="65659" StepId="1" />
-				                <WaitWhile Condition="not IsTodoChecked(65659, 1, 0)" />
+                                <GetTo ZoneId="132" XYZ="30.98908,1.583218,34.56624" /> <!-- New Gridania Aetheryte -->
+								<If Condition="not IsTodoChecked(65659, 1, 0)">
+									<UseObject NpcId="2" XYZ="30.98908,1.583218,34.56624" UseTimes="1" BlacklistAfter="True" Radius="10" QuestId="65659" StepId="1" />
+									<WaitWhile Condition="not IsTodoChecked(65659, 1, 0)" />
+								</If>
                             </If>
                             <If Condition="not IsTodoChecked(65659, 1, 1)">
                                 <GetTo ZoneId="132" XYZ="198.8192, 0, 43.82232" /> <!-- Athelyna -->
@@ -138,9 +140,11 @@
 					<If Condition="HasQuest(65660)">
 					    <If Condition="GetQuestStep(65660) == 1">
                             <If Condition="not IsTodoChecked(65660, 1, 0)">
-                                <GetTo ZoneId="132" XYZ="32.9137, 2.670288, 30.0144" /> <!-- New Gridania Aetheryte -->
-                                <UseObject NpcId="2" XYZ="32.9137, 2.670288, 30.0144" Radius="10" UseTimes="1" BlacklistAfter="True" QuestId="65660" StepId="1" />
-				                <WaitWhile Condition="not IsTodoChecked(65660, 1, 0)" />
+                                <GetTo ZoneId="132" XYZ="30.98908,1.583218,34.56624" /> <!-- New Gridania Aetheryte -->
+								<If Condition="not IsTodoChecked(65660, 1, 0)">
+									<UseObject NpcId="2" XYZ="30.98908,1.583218,34.56624" Radius="10" UseTimes="1" BlacklistAfter="True" QuestId="65660" StepId="1" />
+									<WaitWhile Condition="not IsTodoChecked(65660, 1, 0)" />
+								</If>
                             </If>
                             <If Condition="not IsTodoChecked(65660, 1, 1)">
                                 <GetTo ZoneId="133" XYZ="-234.0506, -4, -8.479184" /> <!-- Madelle -->
@@ -213,9 +217,11 @@
 					<If Condition="HasQuest(65621)">
 					    <If Condition="GetQuestStep(65621) == 1">
                             <If Condition="not IsTodoChecked(65621, 1, 0)">
-                                <GetTo ZoneId="132" XYZ="32.9137, 2.670288, 30.0144" /> <!-- New Gridania Aetheryte -->
-                                <UseObject NpcId="2" XYZ="32.9137, 2.670288, 30.0144" Radius="10" UseTimes="1" BlacklistAfter="True" QuestId="65621" StepId="1" />
-				                <WaitWhile Condition="not IsTodoChecked(65621, 1, 0)" />
+                                <GetTo ZoneId="132" XYZ="30.98908,1.583218,34.56624" /> <!-- New Gridania Aetheryte -->
+								<If Condition="not IsTodoChecked(65621, 1, 0)">
+									<UseObject NpcId="2" XYZ="30.98908,1.583218,34.56624" Radius="10" UseTimes="1" BlacklistAfter="True" QuestId="65621" StepId="1" />
+									<WaitWhile Condition="not IsTodoChecked(65621, 1, 0)" />
+								</If>
                             </If>
                             <If Condition="not IsTodoChecked(65621, 1, 1)">
                                 <GetTo ZoneId="133" XYZ="144.8345, 15.5, -268.0915" /> <!-- Jillian -->
@@ -1132,7 +1138,7 @@
 				</If>
 				<If Condition="HasQuest(65633)">
                     <If Condition="GetQuestStep(65633) == 1">
-                        <GetTo ZoneId="154" XYZ="-399.9846, -4.959229, 79.51477" /> <!-- Hedgetree -->
+                        <GetTo ZoneId="154" XYZ="399.9846, -4.959229, 79.51477" /> <!-- Hedgetree -->
                         <UseObject NpcId="2000008" XYZ="399.9846, -4.959229, 79.51477" Radius="10" QuestId="65633" StepId="1" />
                     </If>
                     <If Condition="GetQuestStep(65633) == 255">
@@ -1744,7 +1750,7 @@
                         <TalkTo NpcId="1002946" XYZ="-41.9776, -31.86214, 338.3077" QuestId="65919" StepId="1" />
                     </If>
                     <If Condition="GetQuestStep(65919) == 2">
-                        <GetTo ZoneId="148" XYZ="-98.28339, -21.92731, 311.9706" /> <!-- Barrow -->
+                        <GetTo ZoneId="148" XYZ="-97.253,-22.79729,306.2173" /> <!-- Barrow -->
                         <UseItem ItemId="2000192" NpcIds="2001007,2001009,2001008" QuestId="65919" StepId="2">
                             <HotSpots>
                                 <HotSpot XYZ="-98.28339, -21.92731, 311.9706" Radius="10" />
@@ -2493,8 +2499,10 @@
                         <If Condition="GetQuestStep(65645) == 1">
                             <If Condition="not IsTodoChecked(65645, 1, 0)">
                                 <GetTo ZoneId="129" XYZ="-80.31275, 18.90033, -1.551555" /> <!-- Limsa Lominsa Lower Decks Aetheryte -->
-                                <UseObject UseDistance="8.0" NpcId="8" XYZ="-79.81915, 18.80033, -2.929894" Radius="10" UseTimes="1" BlacklistAfter="True" />
-				                <WaitWhile Condition="not IsTodoChecked(65645, 1, 0)" />
+								<If Condition="not IsTodoChecked(65645, 1, 0)">
+									<UseObject UseDistance="8.0" NpcId="8" XYZ="-79.81915, 18.80033, -2.929894" Radius="10" UseTimes="1" BlacklistAfter="True" />
+									<WaitWhile Condition="not IsTodoChecked(65645, 1, 0)" />
+								</If>
                             </If>
                             <If Condition="not IsTodoChecked(65645, 1, 1)">
                                 <GetTo ZoneId="129" XYZ="-140.856, 18.2, 17.01373" /> <!-- Swozblaet -->
@@ -2607,8 +2615,10 @@
                         <If Condition="GetQuestStep(65644) == 1">
                             <If Condition="not IsTodoChecked(65644, 1, 0)">
                                 <GetTo ZoneId="129" XYZ="-80.31275, 18.90033, -1.551555" /> <!-- Limsa Lominsa Lower Decks Aetheryte -->
-                                <UseObject UseDistance="8.0" NpcId="8" XYZ="-79.81915, 18.80033, -2.929894" Radius="10" UseTimes="1" BlacklistAfter="True" />
-				                <WaitWhile Condition="not IsTodoChecked(65644, 1, 0)" />
+								<If Condition="not IsTodoChecked(65644, 1, 0)">
+									<UseObject UseDistance="8.0" NpcId="8" XYZ="-79.81915, 18.80033, -2.929894" Radius="10" UseTimes="1" BlacklistAfter="True" />
+									<WaitWhile Condition="not IsTodoChecked(65644, 1, 0)" />
+								</If>
                             </If>
                             <If Condition="not IsTodoChecked(65644, 1, 1)">
                                 <GetTo ZoneId="129" XYZ="-140.856, 18.2, 17.01373" /> <!-- Swozblaet -->
@@ -4721,12 +4731,12 @@
                     </If>
                     <If Condition="GetQuestStep(66082) == 5">
                         <If Condition="not IsOnMap(132)">
-                            <GetTo ZoneId="132" XYZ="32.9137, 2.670288, 30.0144" /> <!-- New Gridania Aetheryte -->
+                            <GetTo ZoneId="132" XYZ="30.98908,1.583218,34.56624" /> <!-- New Gridania Aetheryte -->
                         </If>
                         <If Condition="not Managers.WorldManager.HasAetheryteId(2)">
                             <LogMessage Message="[A Realm Reborn] Attuning to the New Gridania Aetheryte..." />
-                            <MoveTo Name="Aetheryte" XYZ="32.9137, 2.670288, 30.0144" />
-                            <UseObject UseDistance="8.0" NpcId="2" XYZ="32.9137, 2.670288, 30.0144" Radius="10" UseTimes="1" BlacklistAfter="True" />
+                            <MoveTo Name="Aetheryte" XYZ="30.98908,1.583218,34.56624" />
+                            <UseObject UseDistance="8.0" NpcId="2" XYZ="30.98908,1.583218,34.56624" Radius="10" UseTimes="1" BlacklistAfter="True" />
                         </If>
                         <GetTo ZoneId="133" XYZ="-159.411, 4.054098, -4.104736" /> <!-- Silent Conjurer -->
                         <HandOver ItemId="2000458" QuestId="66082" StepId="5" NpcId="1000460" XYZ="-159.411, 4.054098, -4.104736" />
@@ -4907,8 +4917,10 @@
                         <If Condition="GetQuestStep(66104) == 1">
                             <If Condition="not IsTodoChecked(66104, 1, 0)">
                                 <GetTo ZoneId="130" XYZ="-141.8655, -3.154888, -166.603" /> <!-- Ul'dah - Steps of Nald Aetheryte -->
-                                <UseObject UseDistance="8.0" NpcId="9" XYZ="-144.5182, -1.358093, -169.6651" Radius="10" UseTimes="1" BlacklistAfter="True" />
-				                <WaitWhile Condition="not IsTodoChecked(66104, 1, 0)" />
+								<If Condition="not IsTodoChecked(66104, 1, 0)">
+									<UseObject UseDistance="8.0" NpcId="9" XYZ="-144.5182, -1.358093, -169.6651" Radius="10" UseTimes="1" BlacklistAfter="True" />
+									<WaitWhile Condition="not IsTodoChecked(66104, 1, 0)" />
+								</If>
                             </If>
                             <If Condition="not IsTodoChecked(66104, 1, 1)">
                                 <GetTo ZoneId="131" XYZ="-96.30766, 6.599899, 25.0843" /> <!-- Madelle -->
@@ -4982,8 +4994,10 @@
                         <If Condition="GetQuestStep(66105) == 1">
                             <If Condition="not IsTodoChecked(66105, 1, 0)">
                                 <GetTo ZoneId="130" XYZ="-141.8655, -3.154888, -166.603" /> <!-- Ul'dah - Steps of Nald Aetheryte -->
-                                <UseObject UseDistance="8.0" NpcId="9" XYZ="-144.5182, -1.358093, -169.6651" Radius="10" UseTimes="1" BlacklistAfter="True" />
-				                <WaitWhile Condition="not IsTodoChecked(66105, 1, 0)" />
+								<If Condition="not IsTodoChecked(66105, 1, 0)">
+									<UseObject UseDistance="8.0" NpcId="9" XYZ="-144.5182, -1.358093, -169.6651" Radius="10" UseTimes="1" BlacklistAfter="True" />
+									<WaitWhile Condition="not IsTodoChecked(66105, 1, 0)" />
+								</If>
                             </If>
                             <If Condition="not IsTodoChecked(66105, 1, 1)">
                                 <GetTo ZoneId="130" XYZ="-86.90933, 2.099938, -50.7381" /> <!-- Gagaruna -->
@@ -5057,8 +5071,10 @@
                         <If Condition="GetQuestStep(66106) == 1">
                             <If Condition="not IsTodoChecked(66106, 1, 0)">
                                 <GetTo ZoneId="130" XYZ="-141.8655, -3.154888, -166.603" /> <!-- Ul'dah - Steps of Nald Aetheryte -->
-                                <UseObject UseDistance="8.0" NpcId="9" XYZ="-144.5182, -1.358093, -169.6651" Radius="10" UseTimes="1" BlacklistAfter="True" />
-				                <WaitWhile Condition="not IsTodoChecked(66106, 1, 0)" />
+								<If Condition="not IsTodoChecked(66106, 1, 0)">
+									<UseObject UseDistance="8.0" NpcId="9" XYZ="-144.5182, -1.358093, -169.6651" Radius="10" UseTimes="1" BlacklistAfter="True" />
+									<WaitWhile Condition="not IsTodoChecked(66106, 1, 0)" />
+								</If>
                             </If>
                             <If Condition="not IsTodoChecked(66106, 1, 1)">
                                 <GetTo ZoneId="130" XYZ="-197.6468, 18, 61.53449" /> <!-- Yayake -->
@@ -5162,8 +5178,8 @@
 				</If>
 				<If Condition="HasQuest(65685)">
                     <If Condition="GetQuestStep(65685) == 255">
-                        <GetTo ZoneId="130" XYZ="-90.0741, 2.099913, -53.69653" /> <!-- Josias -->
-                        <TurnIn QuestId="65685" NpcId="1002278" ItemId="2000136" XYZ="-90.0741, 2.099913, -53.69653" />
+                        <GetTo ZoneId="130" XYZ="-87.21127,2.099966,-54.7985" /> <!-- Josias -->
+                        <TurnIn QuestId="65685" NpcId="1002278" ItemId="2000136" XYZ="-87.21127,2.099966,-54.7985" />
                     </If>
 				</If>
 			</If>
@@ -5394,8 +5410,8 @@
 				</If>
 				<If Condition="HasQuest(65931)">
                     <If Condition="GetQuestStep(65931) == 255">
-                        <GetTo ZoneId="131" XYZ="140.4897, 4.009998, -59.80017" /> <!-- Nedrick Ironheart -->
-                        <TurnIn QuestId="65931" NpcId="1001679" ItemId="2000197" XYZ="140.4897, 4.009998, -59.80017" />
+                        <GetTo ZoneId="131" XYZ="137.5945,4,-58.5603" /> <!-- Nedrick Ironheart -->
+                        <TurnIn QuestId="65931" NpcId="1001679" ItemId="2000197" XYZ="137.5945,4,-58.5603" />
                     </If>
 				</If>
 			</If>
@@ -5810,8 +5826,8 @@
 					<HandOver ItemId="2000199" QuestId="65839" StepId="1" NpcId="1001455" XYZ="59.95264, 0.9917603, 255.8479" />
 				</If>
 				<If Condition="GetQuestStep(65839) == 255">
-                    <GetTo ZoneId="141" XYZ="-99.4126, -11.39856, -41.73346" /> <!-- Roger -->
-					<TurnIn QuestId="65839" NpcId="1001541" ItemId="2000238" XYZ="-99.4126, -11.39856, -41.73346" />
+                    <GetTo ZoneId="141" XYZ="-96.35732,-11.35,-42.56552" /> <!-- Roger -->
+					<TurnIn QuestId="65839" NpcId="1001541" ItemId="2000238" XYZ="-96.35732,-11.35,-42.56552" />
 				</If>
 			</If>
 
@@ -5938,7 +5954,7 @@
 				<If Condition="not HasQuest(65860)">
                     <GetTo ZoneId="141" XYZ="-96.84007, -11.35, -42.03054" /> <!-- Roger -->
 					<If Condition="IsQuestAcceptQualified(65860)">
-						<PickupQuest NpcId="1001541" QuestId="65860" XYZ="-99.4126, -11.39856, -41.73346" />
+						<PickupQuest NpcId="1001541" QuestId="65860" XYZ="-96.35732,-11.35,-42.56552" />
 					</If>
 				</If>
 				<If Condition="HasQuest(65860)">
@@ -5951,7 +5967,7 @@
                     </While>
                     <If Condition="GetQuestStep(65860) == 255">
                         <GetTo ZoneId="141" XYZ="-96.84007, -11.35, -42.03054" /> <!-- Roger -->
-                        <TurnIn QuestId="65860" NpcId="1001541" ItemId="2000234" XYZ="-99.4126, -11.39856, -41.73346" />
+                        <TurnIn QuestId="65860" NpcId="1001541" ItemId="2000234" XYZ="-96.35732,-11.35,-42.56552" />
                     </If>
 				</If>
 			</If>
@@ -6016,7 +6032,7 @@
 				<If Condition="not HasQuest(65841)">
                     <GetTo ZoneId="141" XYZ="-96.84007, -11.35, -42.03054" /> <!-- Roger -->
 					<If Condition="IsQuestAcceptQualified(65841)">
-						<PickupQuest NpcId="1001541" QuestId="65841" XYZ="-99.4126, -11.39856, -41.73346" />
+						<PickupQuest NpcId="1001541" QuestId="65841" XYZ="-96.35732,-11.35,-42.56552" />
 					</If>
 				</If>
 				<If Condition="HasQuest(65841)">
@@ -7170,12 +7186,12 @@
                     </If>
                     <If Condition="GetQuestStep(66064) == 255">
                         <If Condition="not IsOnMap(132)">
-                            <GetTo ZoneId="132" XYZ="32.9137, 2.670288, 30.0144" /> <!-- New Gridania Aetheryte -->
+                            <GetTo ZoneId="132" XYZ="30.98908,1.583218,34.56624" /> <!-- New Gridania Aetheryte -->
                         </If>
                         <If Condition="not Managers.WorldManager.HasAetheryteId(2)">
                             <LogMessage Message="[A Realm Reborn] Attuning to the New Gridania Aetheryte..." />
-                            <MoveTo Name="Aetheryte" XYZ="32.9137, 2.670288, 30.0144" />
-                            <UseObject UseDistance="8.0" NpcId="2" XYZ="32.9137, 2.670288, 30.0144" Radius="10" UseTimes="1" BlacklistAfter="True" />
+                            <MoveTo Name="Aetheryte" XYZ="30.98908,1.583218,34.56624" />
+                            <UseObject UseDistance="8.0" NpcId="2" XYZ="30.98908,1.583218,34.56624" Radius="10" UseTimes="1" BlacklistAfter="True" />
                         </If>
                         <GetTo ZoneId="133" XYZ="-159.411, 4.054098, -4.104736" /> <!-- Silent Conjurer -->
                         <TurnIn QuestId="66064" NpcId="1000460" ItemId="2000446" XYZ="-159.411, 4.054098, -4.104736" />
@@ -13794,8 +13810,8 @@
                         <TalkTo NpcId="1006357" XYZ="-28.85486, 13.8, 118.6693" QuestId="66408" StepId="1" />
                     </If>
                     <If Condition="not IsTodoChecked(66408, 1, 1)">
-                        <GetTo ZoneId="131" XYZ="140.4897, 4.009998, -59.80017" /> <!-- Syntgoht -->
-                        <TalkTo NpcId="1001679" XYZ="140.4897, 4.009998, -59.80017" QuestId="66408" StepId="1" />
+                        <GetTo ZoneId="131" XYZ="137.5945,4,-58.5603" /> <!-- Syntgoht -->
+                        <TalkTo NpcId="1001679" XYZ="137.5945,4,-58.5603" QuestId="66408" StepId="1" />
                     </If>
                 </If>
                 <If Condition="GetQuestStep(66408) == 2">
@@ -14819,7 +14835,7 @@
                 <If Condition="GetQuestStep(66454) == 255">
                     <GetTo ZoneId="131" XYZ="138.3588, 4, -58.75545" /> <!-- Syntgoht -->
                     <RunCode Name="Wheres_My_Juice" />
-                    <TurnIn QuestId="66454" NpcId="1001679" XYZ="140.4897, 4.009998, -59.80017" />
+                    <TurnIn QuestId="66454" NpcId="1001679" XYZ="137.5945,4,-58.5603" />
                 </If>
             </If>
         </If>
@@ -14830,7 +14846,7 @@
             <If Condition="not HasQuest(66455)">
                 <GetTo ZoneId="131" XYZ="138.3588, 4, -58.75545" /> <!-- Syntgoht -->
                 <If Condition="IsQuestAcceptQualified(66455)">
-                    <PickupQuest NpcId="1001679" QuestId="66455" XYZ="140.4897, 4.009998, -59.80017" />
+                    <PickupQuest NpcId="1001679" QuestId="66455" XYZ="137.5945,4,-58.5603" />
                 </If>
             </If>
             <If Condition="HasQuest(66455)">
@@ -14888,7 +14904,7 @@
             <If Condition="HasQuest(66458)">
                 <If Condition="GetQuestStep(66458) == 255">
                     <GetTo ZoneId="131" XYZ="138.3588, 4, -58.75545" /> <!-- Syntgoht -->
-                    <TurnIn QuestId="66458" NpcId="1001679" XYZ="140.4897, 4.009998, -59.80017" />
+                    <TurnIn QuestId="66458" NpcId="1001679" XYZ="137.5945,4,-58.5603" />
                 </If>
             </If>
         </If>
@@ -14920,7 +14936,7 @@
             <If Condition="not HasQuest(66459)">
                 <GetTo ZoneId="131" XYZ="138.3588, 4, -58.75545" /> <!-- Syntgoht -->
                 <If Condition="IsQuestAcceptQualified(66459)">
-                    <PickupQuest NpcId="1001679" QuestId="66459" XYZ="140.4897, 4.009998, -59.80017" />
+                    <PickupQuest NpcId="1001679" QuestId="66459" XYZ="137.5945,4,-58.5603" />
                 </If>
             </If>
             <If Condition="HasQuest(66459)">
@@ -19350,14 +19366,16 @@
 
 		<CodeChunk Name="Renewing_the_Covenant">
 			<![CDATA[
+				BagSlot EquipSlot = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Head];
 				foreach(BagSlot slot in InventoryManager.FilledInventoryAndArmory)
 				{
-					BagSlot EquipSlot = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Head];
 					if(slot.RawItemId == 2651)
 					{
 						slot.Move(EquipSlot);
+						await Coroutine.Sleep(1000);
+						break;
 					}
-				    await Coroutine.Sleep(1000);
+				    
 				}
 			]]>
 		</CodeChunk>
@@ -19376,12 +19394,13 @@
 
 		<CodeChunk Name="A_Mizzenmast_Repast">
 			<![CDATA[ 
+				BagSlot EquipSlot = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Feet];
 				foreach(BagSlot slot in InventoryManager.FilledInventoryAndArmory)
-				{
-					BagSlot EquipSlot = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Feet];
+				{					
 					if(slot.RawItemId == 3760)
 					{
 						slot.Move(EquipSlot);
+						break;
 					}
 				}
         	]]>
@@ -19431,12 +19450,13 @@
 		</CodeChunk>
 		<CodeChunk Name="A_Royal_Reception">
 			<![CDATA[ 
+				BagSlot EquipSlot = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Earring];
 				foreach(BagSlot slot in InventoryManager.FilledInventoryAndArmory)
-				{
-					BagSlot EquipSlot = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Earring];
+				{			
 					if(slot.RawItemId == 4196)
 					{
 						slot.Move(EquipSlot);
+						break;
 					}
 				}
         	]]>
@@ -19479,10 +19499,10 @@
         </CodeChunk>
 		<CodeChunk Name="Dressed_to_Deceive">
 			<![CDATA[ 
+				BagSlot EquipSlot2 = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Body];
+				BagSlot EquipSlot5 = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Legs];
 				foreach(BagSlot slot in InventoryManager.FilledInventoryAndArmory)
 				{
-					BagSlot EquipSlot2 = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Body];
-					BagSlot EquipSlot5 = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Legs];
 					if(slot.RawItemId == 2995)
 					{
 						slot.Move(EquipSlot2);
@@ -19627,6 +19647,7 @@
 					if(slot.RawItemId == 6001)
 					{
 						slot.UseItem();
+						break;
 					}
 				}
         	]]>
@@ -19860,16 +19881,16 @@
         </CodeChunk>
         <CodeChunk Name="Escape_from_Castrum_Centri">
             <![CDATA[ 
+				BagSlot EquipSlot = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Head];
+				BagSlot EquipSlot2 = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Body];
 				foreach(BagSlot slot in InventoryManager.FilledInventoryAndArmory)
 				{
-					BagSlot EquipSlot = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Head];
-					BagSlot EquipSlot2 = InventoryManager.GetBagByInventoryBagId(ff14bot.Enums.InventoryBagId.EquippedItems)[ff14bot.Enums.EquipmentSlot.Body];
 					if(slot.RawItemId == 6223)
 					{
 						slot.Move(EquipSlot);
 						await Coroutine.Sleep(1000);
 					}
-					if(slot.RawItemId == 6224)
+					else if(slot.RawItemId == 6224)
 					{
 						slot.Move(EquipSlot2);
 						await Coroutine.Sleep(1000);
